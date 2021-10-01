@@ -8,17 +8,17 @@
     --dark-blue: hsl(223, 47%, 23%);
 }
 body {
-    margin: 0; padding: 0;
     background: var(--bale-blue);
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
 
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
 }
-.main-container {
+main {
     width: 90vw;
     max-width: 375px;
     text-align: center;
@@ -32,7 +32,7 @@ body {
     object-fit: cover;
 }
 
-.text-container {
+form {
     background: var(--very-pale-blue);
     padding: 2em;
 }
@@ -82,9 +82,7 @@ body {
 .description, .money, .cancel {
     color: var(--desaturated-blue);
 }
-.annual-plan-text, .cancel {
-    font-weight: 900;
-}
+.cancel { font-weight: 900;}
 .change { font-weight: 700;}
 
 .proceed {
@@ -93,8 +91,9 @@ body {
     font-weight: 700;
 }
 
-.attribution { font-size: 11px; text-align: center;}
+.attribution { font-size: 11px; text-align: center; position: relative; bottom: -3em;}
 .attribution a { color: hsl(228, 45%, 44%); }
+
 a:hover {
     color: tomato;
 }
