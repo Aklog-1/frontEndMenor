@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+    --bale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+body {
+    margin: 0; padding: 0;
+    background: var(--bale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.main-container {
+    width: 90vw;
+    max-width: 375px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+}
+.hero-img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-container {
+    background: var(--very-pale-blue);
+    padding: 2em;
+}
+.title {
+    margin-top: 0;
+}
+.description, 
+.annual-plan-container, 
+.proceed {
+    margin-bottom: 1.5em;
+}
+
+.annual-plan-container {
+    background: hsl(225, 100%, 96%);
+    border-radius: 10px;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.annual-plan {
+    display: flex;
+    align-items: center;
+}
+.proceed {
+    width: 100%;
+    padding: 1em;
+    background: var(--bright-blue);
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 20px 10px var(--bale-blue);
+    
+    outline: 2px solid var(--very-pale-blue);
+    transition: outline-offset 300ms ease-in-out;
+}
+.proceed:hover,
+.proceed:focus {
+    outline: 2px solid var(--very-pale-blue);
+    outline-offset: -5px
+}
+a:hover {
+    color: tomato;
+}
+
+/* typography */
+.title {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.description, .money, .cancel {
+    color: var(--desaturated-blue);
+}
+.annual-plan-text, .cancel {
+    font-weight: 900;
+}
+.change { font-weight: 700;}
+
+.proceed {
+    color: var(--very-pale-blue);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }
