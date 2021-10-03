@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/Aklog-1/frontEndMenor/tree/main/stats-preview-card-component-main
-- Live Site URL: https://github.io/Aklog-1/frontEndMenor/stats-preview-card-component-main
+- Live Site URL: https://aklog-1.github.io/frontEndMenor/stats-preview-card-component-main
 
 ### Built with
 
