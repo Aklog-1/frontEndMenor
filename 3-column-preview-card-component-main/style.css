@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    background: var(--very-light-gray);
+    font-family: "Lexend Deca";
+}
+main {
+    width: 90%;
+    max-width: 400px;
+    margin: 3em auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sedans,
+.suvs,
+.luxury {
+    padding: 2em;
+}
+
+.sedans {background: var(--bright-orange)}
+.sedans .learn-more {color: var(--bright-orange)}
+
+.suvs {background: var(--dark-cyan)}
+.suvs .learn-more {color: var(--dark-cyan)}
+
+.luxury {background: var(--very-dark-cyan)}
+.luxury .learn-more {color: var(--very-dark-cyan)}
+
+.learn-more {
+    padding: .7em 1.5em;
+    border: none;
+    border-radius: 20px;
+    background: var(--very-light-gray);
+}
+
+/* Typography - wrap*/
+h1 {
+    color: var(--very-light-gray);
+    font-family: "Big Shoulders Display";    
+    text-transform: uppercase;
+}
+.description {
+    color: var(--transparent-white);
+    font-size: .85rem;
+    line-height: 1.7;
+    
+    margin-bottom: 5em;
+}
+.learn-more {
+    font-family: "Lexend Deca";
+    text-transform: capitalize;
+}
+
+
+@media (min-width: 700px) {
+    body {
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        max-width: 900px;
+        display: flex;
+    }
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; margin-bottom: 1.5em}
+.attribution a { color: hsl(228, 45%, 44%); }
