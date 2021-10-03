@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* primary */
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+
+    /* neutral */
+    --white: hsl(0, 0%, 100%);
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+
+body {
+    font-size: 15px;
+    margin: 2em 0;
+    background: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main {
+    width: 90%;
+    max-width: 375px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 3em;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.layer {
+    position: relative;
+}
+.layer::after {
+    content: '';
+    background: linear-gradient(hsla(277, 64%, 61%, 0.5), hsla(277, 64%, 61%, 0.5));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.card-text {
+    padding: 2.5em 2em;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--dark-desaturated-blue);
+}
+
+.card-text > * +  * {
+    margin-top: 1.5em;
+}
+.stat-container > * + * {
+    margin-top: 1.5em;
+}
+
+.foremost span {
+    color: var(--soft-violet);
+}
+
+/* 
+    typography
+ */
+.foremost {
+    color: var(--white);
+    font-family: 'Inter';
+}
+.intro {
+    font-family: 'Inter';
+    color: var(--slightly-transparent-white);
+    line-height: 1.7;
+}
+.stat {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+.stat-heading {
+    color: var(--transparent-white);
+    text-transform: uppercase;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: .8rem;
+    
+    margin-top: .5em;
+}
+/* ========= typography end ==========*/
+
+
+@media (min-width: 750px) {
+    img {
+        content: url(images/image-header-desktop.jpg);
+        height: 100%;
+    }
+    .layer {
+        flex: 1;
+    }
+    .card-text {
+        flex: 1;
+    }
+    body {
+        display: flex;
+        min-height: 100vh;
+    }
+    main {
+        max-width: 950px;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: auto;
+    }
+    .card-text {
+        text-align: left;
+    }
+    .stat-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .stat-container > * {
+        margin: 0;
+    }
+    
+}
