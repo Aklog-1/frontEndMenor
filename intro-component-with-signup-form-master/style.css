@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --red-primary: hsl(0, 100%, 74%);
+    --green-primary: hsl(154, 59%, 51%);
+
+    --blue-accent: hsl(248, 32%, 49%);
+
+    --dark-blue-neutral: hsl(249, 10%, 26%) ;
+    --grayish-blue-neutral: hsl(246, 25%, 77%);
+}
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: Poppins, "sans sarif";
+    color: white;
+    background: url("images/bg-intro-mobile.png"), var(--red-primary);
+    
+    padding: 5em 2em;
+
+}
+main {
+    width: 90%;
+    max-width: 375px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 8px;
+}
+.foremost {
+    margin-bottom: 1em;
+}
+.description {
+    margin-bottom: 4em;
+}
+.try-it {
+    background: var(--blue-accent);
+    padding: 1em 4em;
+    margin-bottom: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px rgba(0, 0, 0, .15);
+}
+
+form {
+    background: white;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 5px rgba(0, 0, 0, .15);
+}
+form * + * {
+    margin-top: 1em;
+}
+input {
+    width: 100%;
+    padding: .9em;
+    border: 1px solid var(--grayish-blue-neutral);
+    border-radius: 4px;
+}
+input:focus {
+    outline: none;
+    border: 1px solid black;
+}
+.claim {
+    background: var(--green-primary);
+    width: 100%;
+    padding: .9em 0;
+    border: none;
+    border-radius: 4px;
+}
+.claim:hover {
+    opacity: 50%;
+}
+
+/* 
+        typography
+ */
+.foremost {
+    font-size: 1.8rem;
+}
+.description {
+    font-size: .85rem;
+    line-height: 1.8em;
+    color: hsla(0, 0%, 100%, 90%);
+}
+.try-it {
+    font-weight: 500;
+    font-size: .85rem;
+}
+.try-it span {
+    color: hsla(0, 0%, 100%, 80%);
+    font-weight: 400;
+}
+input {
+    color: var(--dark-blue-neutral);
+    font-weight: 600;
+    font-family: poppins;
+}
+.claim {
+    color: white;
+    text-transform: uppercase;
+    font-family: poppins;
+}
+.terms {
+    font-size: .65rem;
+    color: var(--grayish-blue-neutral);
+}
+.terms span {
+    color: var(--red-primary);
+    font-weight: 700;
+}
+
+
+footer {
+    margin-top: 2em;
+}
+.attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+ @media (min-width: 750px) {
+     body {
+        height: 100vh;
+        display: flex;
+     }
+     main {
+         width: 90%;
+         max-width: 1000px;
+         margin: auto;
+         display: flex;
+         align-items: center;
+     }
+     .text-stuff {
+         text-align: left;
+         margin-right: 2.5em;
+         flex: 1;
+     }
+     .form-container {
+         flex: 1;
+     }
+     footer {
+         position: absolute;
+         bottom: 1em;
+     }
+ }
+
+
+
+
+
+ /* for DOM manipulation */
+.input-control * {
+    margin: 0;
+}
+.input-control {
+    position: relative;
+}
+.err-img {
+    position: absolute;
+    right: 1em;
+    top: .75em;
+    z-index: 10;
+    display: none;
+}
+.error-tip {
+    color: var(--red-primary);
+    text-align: right;
+    font-size: .7rem;
+    display: none;
+}
+
+.show-err {
+    display: block;
+}
+.input-err {
+    border: 2px solid var(--red-primary);
+    color: var(--red-primary);
+}
+
