@@ -14,8 +14,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Aklog-1/frontEndMenor/tree/main/intro-component-with-signup-form-master
+- Live Site URL: https://aklog-1.github.io/frontEndMenor/intro-component-with-signup-form-master
 
 ### Built with
 
