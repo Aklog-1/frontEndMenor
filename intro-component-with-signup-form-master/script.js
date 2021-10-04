@@ -6,26 +6,15 @@ const errTips = document.querySelectorAll(".error-tip");
 
 
 function empty(field) {
-    if (field === "") {
-        return true;
-    }
-    return false;
+    return field === "";
 }
 
 function validName(name) {
-    if(/^[a-zA-Z]+$/.test(name)) {
-        console.log(true)
-        return true;
-    }
-    console.log(false);
-    return false;
+    return /^[a-zA-Z]+$/.test(name)
 }
 
 function validEmail(email) {
-    if(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
-        return true;
-    }
-    return false;
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
 function showError(input, index) {
