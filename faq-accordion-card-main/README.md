@@ -13,7 +13,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/Aklog-1/frontEndMenor/tree/main/faq-accordion-card-main
-- Live Site URL: https://Aklog-1.github.io/frontEndMentor/faq-accordion-card-main
+- Live Site URL: https://Aklog-1.github.io/frontEndMentor/faq-accordion-card-main/
 
 ### Built with
 
