@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /* primary */
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+
+        /* background linear gradient */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+        /* neutral */
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+        
+        /* horizontal */
+    --light-grayish-blue: hsl(240, 5%, 91%);
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kumbh Sans";
+    font-size: 12px;
+    background: linear-gradient(var(--soft-violet), var(--soft-blue));
+    padding: 13em 0 4em 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+main {
+    width: 350px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+
+    padding: 3em;
+    padding-top: 0;
+    margin-bottom: 2em;
+}
+.hero-image {
+    transform: translate(-.7em, -9em);
+    
+}
+.as-shadow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.heading {
+    margin-top: -3em;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.QandA {
+    position: relative;
+}
+
+.icon-arrow-down {
+    position: absolute;
+    top: .5em;
+    right: 0;
+    cursor: pointer;
+}
+.answer {
+    display: none;
+}
+
+/* typography */
+.heading {
+    font-size: 1.75rem;
+}
+.question {
+    font-weight: 700;
+    color: var(--dark-grayish-blue);
+    line-height: 1.8;
+}
+.question:hover {
+    color: var(--soft-red);
+    cursor: pointer;
+}
+.answer {
+    line-height: 1.5;
+    color: var(--dark-grayish-blue);
+}
+hr {
+    color: var(--light-grayish-blue);
+}
+
+
+
+/* dom manipulation */
+.show-answer {
+    display: block;
+}
+.rotate-arrow {
+    transform: rotate(180deg);
+}
+.chosen-question {
+    color: var(--very-dark-grayish-blue);
+}
+.chosen-question:hover {
+    color: initial;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
