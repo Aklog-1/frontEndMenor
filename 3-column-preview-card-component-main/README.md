@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/Aklog-1/frontEndMenor/tree/main/3-column-preview-card-component-main
-- Live Site URL: https://aklog-1.github.io/frontEndMenor/3-column-preview-card-component-main
+- Solution URL: https://github.com/lealem-b/frontEndMenor/tree/main/3-column-preview-card-component-main
+- Live Site URL: https://lealem-b.github.io/frontEndMenor/3-column-preview-card-component-main
 
 ### Built with
 
